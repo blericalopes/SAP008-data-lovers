@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Atma&family=K2D&display=swap');
+  </style>
+
+</head>
+
+<body>
+  <aside>
+    <img id="portalmobile"
+      src="https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/portal_mobile.gif?raw=true"
+      alt="portal de teletransporte de Rick and Morty">
+    <img id="portalweb"
+      src="https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/portal_web.gif?raw=true"
+      alt="portal de teletransporte de Rick and Morty">
+  </aside>
+
+  <main>
+
+    <img id="title"
+      src="https://github.com/blericalopes/SAP008-data-lovers/blob/main/src_data_lovers/rick_and_morty_header.png?raw=true"
+      alt="logo Rick and Morty">
+
+    <p id="intro">Rick and Morty traz as vivências do cientista Rick e seu neto, Morty, nas infinitas possibilidades que o universo permite. 
+      Abordando relacionamentos, moralidade, filosofia, sociologia eciência, diversos personagens são apresentados e, aqui, você pode procurar 
+      e saber um pouco mais sobre cada um.</p>
+
+    <form>
+
+      <input type="text" id="keywords" name="keywords" placeholder="Palavras-chave"><br>
+      <button id="filter" class="buttons">FILTRAR</button>
+      <button id="restart" class="buttons">RECOMEÇAR</button>
+      <button id="search" class="buttons">BUSCAR</button>
+
+      <section id="filterbox">
+
+        <p style="
+        margin-top: 5px;
+        margin-bottom: 5px;">Selecione um filtro:</p>
+        <select id="filteroptions">
+
+          <option disabled selected>Status:</option>
+          <option value="Alive" selected>Vivo</option>
+          <option value="Dead">Morto</option>
+          <option value="unknown">Desconhecido</option>
+
+          <option disabled selected>Gênero:</option>
+          <option value="Female" selected>Feminino</option>
+          <option value="Male">Masculino</option>
+          <option value="Genderless">Sem gênero</option>
+          <option disabled selected>Outros:</option>
+          <option value="all" selected>Mostrar tudo</option>
+
+        </select>
+
+        <p style="
+        margin-top: 10px;
+        margin-bottom: 5px;">Ordenar por:</p>
+        <select id="orderoptions">
+
+          <option value="az" selected>A-z</option>
+          <option value="za">Z-a</option>
+          <option value="episode">Episódio</option>
+
+        </select>
+
+      </section>
+
+    </form>
+    <p id="calculation"></p>
+    
+    <section id="cardscontainer"></section>
+
+    <footer>Developed by Érica Lopes e Isabela Nunes</footer>
+  </main>
+
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
