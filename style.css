@@ -6,6 +6,8 @@ body {
     color: white;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
+    height: 100vh;
 }
 
 aside {
@@ -240,7 +242,7 @@ footer {
     }
 
     #portalweb {
-        width: 950px;
+        width: 50vw;
         position: fixed;
         bottom: 0;
         left: 0;
@@ -252,13 +254,13 @@ footer {
     }
 
     #title {
-        width: 700px;
+        width: 40vw;
         margin-bottom: 20px;
     }
 
     #intro {
         margin-block-end: 35px;
-        width: 25vw;
+        width: 500px;
     }
 
     input[name=keywords] {
@@ -278,7 +280,7 @@ footer {
     }
 
     #cardscontainer {
-        height: 490px;
+        height: 50vh;
     }
 
     #photos {
