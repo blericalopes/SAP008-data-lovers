@@ -17,7 +17,7 @@ intro.hidden = false;
 filterBox.hidden = true;
 buttonRestart.hidden = true;
 
-title.addEventListener('click', () => {
+title.addEventListener('click', () => {//recarrega a partir da imagem do titulo
     document.location.reload(true);
 });
 
@@ -26,7 +26,7 @@ buttonFilter.addEventListener('click', (e) => { //exibe filtros
     e.preventDefault();
 });
 
-function showCards(infos) { //cards template
+function showCards(infos) { //cards template//map função callback retorna novo array
     return infos.map((elem) => `
       <article class="cards">
         <img id="photos" src="${elem.image}" alt="imagem do personagem">
@@ -41,7 +41,7 @@ function showCards(infos) { //cards template
     ).join('');
 }
 
-buttonSearch.addEventListener('click', (e) => { //filtra, ordena e exibe cards
+buttonSearch.addEventListener('click', (e) => { 
     intro.hidden = true;
     filterBox.hidden = true;
     buttonFilter.hidden = true;
@@ -77,8 +77,7 @@ buttonSearch.addEventListener('click', (e) => { //filtra, ordena e exibe cards
     }
 })
 
-// Filterbox sobrepondo
-// Como sobrepor logo e portal
-// Estilizar o scroll
-// Campo de busca por nome x busca por filtro (apagar nome no input?)
-// Conteúdo de dentro dos cards acupando espaços diferentes
+
+
+
+

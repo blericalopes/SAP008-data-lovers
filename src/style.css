@@ -115,6 +115,7 @@ input[name=keywords] {
     flex-direction: column;
     align-items: center;
     flex: 0 1 25%;
+    overflow: scroll;
 }
 
 
